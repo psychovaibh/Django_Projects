@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    {% block title %}
+    <title>Page | INDEX</title>
+    {% endblock %}
+</head>
+
+<body>
+    <ul>
+        <li> <a href="/">Home</a></li>
+        <li> <a href="/profile/">Profile</a></li>
+        <li> <a href="/about/">About</a></li>
+        <li> <a href="/contact/">Contact</a></li>
+        <li> <a href="/gallery/">Gallery</a></li>
+    </ul>
+
+    {% block data %}
+    <h1>This is Home Page!!</h1>
+
+    <br>
+    <form action="" method="post">
+        {% csrf_token %}
+        <label for="message">Message</label>
+        <br> <br>
+        <textarea name="message" id="message" cols="40" rows="5"></textarea>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <br>
+    {% if show %}
+    <table border="2px" cellpadding="15px">
+        <tr>
+            <th>Lower Vowels!</th>
+            <td>{{lv}}</td>
+        </tr>
+        <tr>
+            <th>Lower consonent!</th>
+            <td>{{lc}}</td>
+        </tr>
+        <tr>
+            <th>Upper Vowels!</th>
+            <td>{{uv}}</td>
+        </tr>
+        <tr>
+            <th>Upper consonent!</th>
+            <td>{{uc}}</td>
+        </tr>
+        <tr>
+            <th>Digits!</th>
+            <td>{{d}}</td>
+        </tr>
+        <tr>
+            <th>Space!</th>
+            <td>{{s}}</td>
+        </tr>
+        <tr>
+            <th>Special Characters!</th>
+            <td>{{sp}}</td>
+        </tr>
+    </table>
+    {% endif %}
+    {% endblock %}
+</body>
+
+</html>

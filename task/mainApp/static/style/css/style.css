@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.top-text {
+    font-weight: 600;
+    background-color: rgb(30, 4, 85) !important;
+    color: white;
+    font-size: 19px;
+}
+
+.nav-color,
+.second-section {
+    background-color: rgb(242, 251, 250) !important;
+}
+
+#login {
+    color: rgb(90, 37, 225);
+}
+
+
+#get-button {
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: white;
+    border-color: rgb(90, 37, 225);
+    font-weight: 600;
+}
+
+
+.nav-link {
+    font-size: 22px;
+    margin: 0px 10px;
+    font-weight: 600;
+}
+
+
+.second-section h5 {
+    color: rgb(7, 218, 197);
+}
+
+.second-section h1 {
+    font-weight: 900;
+    font-size: 5pc;
+}
+
+.second-section span {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.col-md-6 label,
+.col-md-12 label {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.col-md-6 input,
+.col-md-12 input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-radius: 0% !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.551);
+}
+
+.select-border-bottom {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-radius: 0% !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.551);
+}
+
+.sb-btn button {
+    background-color: rgb(7, 218, 197);
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 700;
+}

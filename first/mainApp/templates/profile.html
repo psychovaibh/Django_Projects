@@ -1,0 +1,29 @@
+{% extends "index.html" %}
+    {% block title %}
+    <title>Page | Profile</title>
+    {% endblock %}
+
+    {% block data %}
+    <h1>This is Profile Page!!</h1>
+
+    <table border="1px" cellspacing="5px">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Designation</th>
+            <th>Salary</th>
+            <th>City</th>
+            <th>State</th>
+        </tr>
+        {%for item in datatable %}
+        <tr>
+            <td>{{item.id}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.dsg}}</td>
+            <td>{{item.salary}}</td>
+            <td>{{item.city}}</td>
+            <td>{{item.state}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% endblock %}

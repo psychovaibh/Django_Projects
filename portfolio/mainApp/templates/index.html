@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="10">
+    <!-- bootstrap css lnked -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- self css  -->
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+    {% block title %}
+    <title>PortFolio | Vaibh</title>
+    {% endblock %}
+</head>
+
+<body>
+    {% block body %}
+    <nav class="navbar navbar-expand-lg  p-3 sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-1" href="">
+                <img src="{% static '/images/PortFolio.png' %}" alt="Logo" width="50%" height="30%"
+                    class="d-inline-block align-text-top"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-5">
+                    <li class="nav-item me-5">
+                        <a class="nav-link fw-bolder fs-5 active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link fw-bolder fs-5" href="#about">AboutMe</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link fw-bolder fs-5" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link fw-bolder fs-5" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link fw-bolder fs-5" href="#">Education</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row container">
+            <div class="col-md-6 ps-4 mt-3">
+                <h1 class="fw-semibold">Hello, <br>
+                    <span class="text-danger fw-bold">I'm Vaibhav</span><br><span class="fw-semibold">Web
+                        Developer</span>
+                </h1>
+                <br>
+                <h5 class="ps-4">Let's Get in Touch -</h5>
+                <ul class="list-unstyled d-flex links mt-3 flex-wrap">
+                    <li><a href="https://github.com/psychovaibh"><img src="{% static '/images/github.png' %}"
+                                alt="error"></a></li>
+                    <li><a href="https://www.linkedin.com/in/vaibh-av-89337a24b/"><img
+                                src="{% static '/images/linkedin.png' %}" alt="error"></a></li>
+                    <li><a href="mailto:vibuvaibhav1@gmail.com"><img src="{% static '/images/email.png' %}"
+                                alt="error"></a></li>
+                    <li><a href="https://wa.me/+918569991533"><img src="{% static '/images/whatsapp.png' %}"
+                                alt="error"></a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 mt-3">
+
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+
+
+    <!-- bootstrap js linking -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
